@@ -7,6 +7,7 @@ import { ERC20, GeometricMeanAMM, MockERC20 } from "../typechain-types";
 
 const TOKENS_TO_MINT = BigInt(1e20);
 
+// There tests are only used for manual testing, they are not proper unittests.
 describe("GeometricMeanAMM", function () {
   async function createERC20(tokenName: string, tokenSymbol: string, accToFund: string): Promise<MockERC20> {
     const tokenContract = await hre.ethers.getContractFactory("MockERC20");
