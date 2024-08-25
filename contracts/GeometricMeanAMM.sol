@@ -57,7 +57,8 @@ contract GeometricMeanAMM is CFMM {
     /**
      *  @notice Calculates the amount of LP tokens that will be minted during the first call to addLiquidity method.
      *  @param assets The assets that were sent with the first call to addLiquidity method
-     *  @return initialLpTokenSupply The amount of LP tokens that will be minted during the first call to addLiquidity method.
+     *  @return initialLpTokenSupply The amount of LP tokens that will be minted during the
+     *          first call to addLiquidity method.
      */
     function calculateInitialLPTokenSupply(
         uint256[] calldata assets

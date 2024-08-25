@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.24;
 
-import {UtilsLib} from "./UtilsLib.sol";
-import {SafeCast} from "@openzeppelin/contracts/utils/math/SafeCast.sol";
+import { UtilsLib } from "./UtilsLib.sol";
+import { SafeCast } from "@openzeppelin/contracts/utils/math/SafeCast.sol";
 
 library VectorLib {
     using SafeCast for uint256;
@@ -82,7 +82,7 @@ library VectorLib {
         uint256 aLength = a.length;
         res = new int256[](aLength);
         for (uint256 i; i < aLength - 1; ++i) {
-            res[i] = a[i] * UtilsLib.FIXED_DECIMAL_FACTOR.toInt256() / a[aLength - 1];
+            res[i] = (a[i] * UtilsLib.FIXED_DECIMAL_FACTOR.toInt256()) / a[aLength - 1];
         }
         res[aLength - 1] = UtilsLib.FIXED_DECIMAL_FACTOR.toInt256();
     }
@@ -91,7 +91,7 @@ library VectorLib {
         uint256 aLength = a.length;
         res = new uint256[](aLength);
         for (uint256 i; i < aLength - 1; ++i) {
-            res[i] = a[i] * UtilsLib.FIXED_DECIMAL_FACTOR / a[aLength - 1];
+            res[i] = (a[i] * UtilsLib.FIXED_DECIMAL_FACTOR) / a[aLength - 1];
         }
         res[aLength - 1] = UtilsLib.FIXED_DECIMAL_FACTOR;
     }

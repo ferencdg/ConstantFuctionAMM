@@ -14,6 +14,9 @@ importers:
       extra-bigint:
         specifier: ^1.1.18
         version: 1.1.18
+      solhint-community:
+        specifier: ^4.0.0
+        version: 4.0.0(typescript@5.5.4)
       sqlite3:
         specifier: ^5.1.7
         version: 5.1.7
@@ -121,10 +124,10 @@ importers:
         specifier: ^10.1.0
         version: 10.7.3
       prettier:
-        specifier: ^2.8.4
+        specifier: ^2.8.8
         version: 2.8.8
       prettier-plugin-solidity:
-        specifier: ^1.1.2
+        specifier: ^1.3.1
         version: 1.3.1(prettier@2.8.8)
       rimraf:
         specifier: ^4.1.2
@@ -2680,6 +2683,10 @@ packages:
   solc@0.8.26:
     resolution: {integrity: sha512-yiPQNVf5rBFHwN6SIf3TUUvVAFKcQqmSUFeq+fb6pNRCo0ZCgpYOZDi3BVoezCPIAcKrVYd/qXlBLUP9wVrZ9g==}
     engines: {node: '>=10.0.0'}
+    hasBin: true
+
+  solhint-community@4.0.0:
+    resolution: {integrity: sha512-BERw3qYzkJE64EwvYrp2+iiTN8yAZOJ74FCiL4bTBp7v0JFUvRYCEGZKAqfHcfi/koKkzM6qThsJUceKm9vvfg==}
     hasBin: true
 
   solhint-plugin-prettier@0.0.5:
@@ -6312,6 +6319,30 @@ snapshots:
       tmp: 0.0.33
     transitivePeerDependencies:
       - debug
+
+  solhint-community@4.0.0(typescript@5.5.4):
+    dependencies:
+      '@solidity-parser/parser': 0.16.2
+      ajv: 6.12.6
+      antlr4: 4.13.2
+      ast-parents: 0.0.1
+      chalk: 4.1.2
+      commander: 11.1.0
+      cosmiconfig: 8.3.6(typescript@5.5.4)
+      fast-diff: 1.3.0
+      glob: 8.1.0
+      ignore: 5.3.1
+      js-yaml: 4.1.0
+      lodash: 4.17.21
+      pluralize: 8.0.0
+      semver: 6.3.1
+      strip-ansi: 6.0.1
+      table: 6.8.2
+      text-table: 0.2.0
+    optionalDependencies:
+      prettier: 2.8.8
+    transitivePeerDependencies:
+      - typescript
 
   solhint-plugin-prettier@0.0.5(prettier-plugin-solidity@1.3.1(prettier@2.8.8))(prettier@2.8.8):
     dependencies:
