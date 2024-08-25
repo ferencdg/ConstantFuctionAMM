@@ -23,11 +23,15 @@ Currently there are no proper unit tests, only tests that were used for manual t
 
 ```pnpm test:mock```
 
+Please note that that this project was created based on Zama template and will fail with:
+Artifact for contract "fhevm/lib/ACL.sol:ACL" not found.
+
 ## Deploy
 
-Currently the deployment is done into an in-memory node, as the main branch for fhevm-hardhat-template frequently messes up the project after running pnpm fhevm:start.
-
 ```pnpm task:deployGeometricMeanAMM```
+
+Please note that that this project was created based on Zama template and will fail with:
+Artifact for contract "fhevm/lib/ACL.sol:ACL" not found.
 
 ## Limitations/Missing features/Comments
 
