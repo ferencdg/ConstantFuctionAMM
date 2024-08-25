@@ -28,7 +28,7 @@ Currently the deployment is done into an in-memory node, as the main branch for 
 
 ```pnpm task:deployGeometricMeanAMM```
 
-## Limitations/Missing features
+## Limitations/Missing features/Comments
 
 1. Tests are largely missing.
 1. Limited documentation.
@@ -37,3 +37,4 @@ Currently the deployment is done into an in-memory node, as the main branch for 
 1. Fees on Transfer type of ERC20 contracts are not supported.
 1. No multi hop swapping
 1. No audit was done
+1. The Code heavily relies on the overflow/underflow protection implmenented in the solidity compiler starting from version 0.8.
