@@ -14,7 +14,8 @@ The code supports an unlimited number of assets, and also gives an example of a 
 The code is more of a creative solution to the problem of CFMM rather than a practical one for the following reasons.
 
 1. Gas efficiency: by knowing the actual trading function like x * y = C, there could be more gas optimization done
-1. Security: the CFMMs base class has to rely on predefined tolerance values when checking the changes in the return value from the trading function or from the gradient vector.
+1. Security: the CFMMs base class has to rely on predefined tolerance values when checking the changes in the return value from the trading function or from the gradient vector. More analysis needs to be done about the security implication of those tolerance levels.
+1. Trading function evaluation: evaluating the trading function might exceed the maximum value of uin256, so it requires special care. Instead of evaluating the original trading function, the Nth root of the trading function could be considered.
 
 ## Testing
 
