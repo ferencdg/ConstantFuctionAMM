@@ -1,3 +1,4 @@
+import "@nomicfoundation/hardhat-ignition-ethers";
 import "@nomicfoundation/hardhat-toolbox";
 import dotenv from "dotenv";
 import * as fs from "fs-extra";
@@ -151,7 +152,7 @@ const config: HardhatUserConfig = {
     tests: "./test",
   },
   solidity: {
-    version: "0.8.24",
+    version: "0.8.26",
     settings: {
       metadata: {
         // Not including the metadata hash
@@ -164,6 +165,7 @@ const config: HardhatUserConfig = {
         enabled: true,
         runs: 800,
       },
+      viaIR: true,
       evmVersion: "cancun",
     },
   },

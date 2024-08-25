@@ -1,0 +1,11 @@
+{
+  "GeometricMeanAMM": {
+    "assetA": "0xEeEEeeEeEEeEEEEeEEEEEeeEeeeeEEeeeeEEeee0",
+    "assetB": "0xeEEEEeEeEeeEEEEEeEEeEEeeEeEeeeEeEeEEeee1",
+    "assetC": "0xEEeEEeeEEeeeEeEeEeeEeEEEEeeEeeeeeeEeeee2",
+    "lpTokenName": "LPToken",
+    "lpTokenSymbol": "LP1",
+    "evalTradeFuncMaxTolerance": "10000000000000000000n",
+    "evalTradeFuncGradientMaxTolerance": "1000000000000000000n"
+  }
+}

@@ -89,8 +89,7 @@
     "test:mock": "hardhat test --network hardhat",
     "coverage:mock": "hardhat coverage",
     "task:getEthereumAddress": "hardhat task:getEthereumAddress",
-    "task:deployERC20": "hardhat task:deployERC20",
-    "task:accounts": "hardhat task:accounts",
+    "task:deployGeometricMeanAMM": "hardhat ignition deploy ./ignition/modules/GeometricMeanAMM.ts --parameters ./ignition/parameters.json --network hardhat",
     "fhevm:start": "make run-full && ./scripts/fund_test_addresses_docker.sh && ./launch-fhevm.sh",
     "fhevm:stop": "make clean",
     "fhevm:restart": "fhevm:stop && fhevm:start",
@@ -102,6 +101,7 @@
     "fhevm:faucet:eve": "docker exec -i zama-dev-fhevm-validator-1 faucet $(npx hardhat task:getEthereumAddressEve)"
   },
   "dependencies": {
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.5",
     "extra-bigint": "^1.1.18",
     "sqlite3": "^5.1.7"
   }
